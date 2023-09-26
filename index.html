@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kanaban Board by Diogo Alves</title>
+</head>
+<body>
+    <div class="board">
+        <form class="todo-form">
+            <input type="text" placeholder="NEW TODO..." class="todo-input">
+            <button class="todo-btn" type="submit">ADD +</button>
+        </form>
+        <div class="lanes">
+            <div class="lane" id="todo-lane">
+                <h3 class="heading">TODO</h3>
+                <p class="task" draggable="true">Default 1</p>
+                <p class="task" draggable="true">Default 2</p>
+                <p class="task" draggable="true">Default 3</p>
+            </div>
+            <div class="lane">
+                <h3 class="heading">DOING</h3>
+                <p class="task" draggable="true">Default 4</p>
+            </div>
+            <div class="lane">
+                <h3 class="heading">DONE</h3>
+                <p class="task" draggable="true">Default 5</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
